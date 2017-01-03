@@ -1,0 +1,99 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 oct. 2016, 16:52:26
+    Author     : joetzflo
+*/
+html,body{
+    margin:0;
+    padding:0;
+	 background: linear-gradient(90deg, aqua, teal);
+}
+h1,h2,h3,p{
+    margin:0;
+    padding:0;  
+}
+header{
+    height:100px;
+    line-height:100px;
+}
+header h1{
+    vertical-align: top;
+}
+
+#login{
+    margin:auto;
+    height:240px;
+    width:400px;
+    padding:30px;
+	border-radius:4px;
+	box-shadow:0 10px 25px 0px rgba(0,0,0,0.2);
+}
+h1{
+    text-shadow : 0 1px 0 rgba(255,255,255,0.7),
+        0px 2px 0 rgba(0,0,0,0.5);
+    text-transform:uppercase;
+    text-align:center;
+    color:#000;
+    margin:0 0 30px 0;
+    letter-spacing:4px;
+    font:normal 26px/1 Verdana, Helvetica;
+    position:relative;
+}
+h1:after, h1:before {
+    background-color:#777;
+    content:"";
+    height:1px;
+    position:absolute;
+    top:15px;
+    width:120px;
+}
+h1:after{
+    background-image: -webkit-gradient(linear,left top,right top, 
+        from (#777),to(#fff));
+    background-image: -webkit-linear-gradient(left,#777,#FFF);
+    right:0;
+}
+h1:before{
+    background-image: -webkit-gradient(linear,left top,right top, 
+        from (#777),to(#fff));
+    background-image: -webkit-linear-gradient(right,#777,#FFF);
+    left:0;
+}
+fieldset {
+    border:0;
+    padding:0;
+    margin:0;
+}
+#inputs input {
+    background:#F1F1F1;
+    padding: 15px 15px 15px 30px;
+    margin:0 0 10px 0;
+    width:353px;
+    border:1px solid #CCC;
+    border-radius : 5px;
+    box-shadow:0 1px 1px #CCC inset,0 1px 0 #FFF;
+}
+#id{
+    background-position: 5px -2px;
+}
+#pwd{
+    background-position: 5px -52px;
+}
+#inputs input:focus{
+    background-color: #FFF;
+    border-color: #e8C291;
+    outline:none;
+    box-shadow:0 0 0 1px #e8C291 inset;
+}
+#button{text-align:center;}
+
+#lien a{
+display:block;
+text-align:center;
+text-decoration:none;
+line-height:1.5em;
+}
