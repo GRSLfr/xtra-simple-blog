@@ -1,3 +1,4 @@
+<?php include "include/head.php" ?>
 <?php 
 
 try
@@ -13,7 +14,7 @@ $username = filter_input(INPUT_POST, 'user');
 $password = filter_input(INPUT_POST, 'pwd');
 
 
-// Vérification des identifiants
+// VÃ©rification des identifiants
 $req = $bdd->prepare('SELECT id FROM users WHERE username = :username AND pwd = :password');
 $req->execute(array(
     'username' => $username,
@@ -30,7 +31,10 @@ else
     session_start();
     $_SESSION['id'] = $resultat['id'];
     $_SESSION['username'] = $username;
-	echo 'Bonjour ' . $_SESSION['username'] .", vous êtes maintenant connecté !";
+	echo 'Bonjour ' . $_SESSION['username'] .", vous Ãªtes maintenant connectÃ© !";
+	echo '<br><a href="editor.php">ajouter un article</a>';
 }
 
 ?>
+
+<?php include "include/foot.php" ?>

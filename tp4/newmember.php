@@ -1,3 +1,4 @@
+<?php include "include/head.php" ?>
 <?php
 try
 {
@@ -19,7 +20,8 @@ $req->execute(array(
 	'email' => $email
 	));
 
-echo 'Vous êtes maintenant membre !';
+echo 'Vous Ãªtes maintenant membre !';
 echo '<a href="index.php">Se connecter</a>';
-echo '<br><a href="inscription.php"> << revenir à la page d\'inscription</a>';
+echo '<br><a href="inscription.php"> << revenir Ã  la page d\'inscription</a>';
 ?>
+<?php include "include/foot.php" ?>

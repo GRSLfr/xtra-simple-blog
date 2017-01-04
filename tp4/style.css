@@ -7,10 +7,13 @@ and open the template in the editor.
     Created on : 25 oct. 2016, 16:52:26
     Author     : joetzflo
 */
+* {
+	box-sizing:border-box;
+}
 html,body{
     margin:0;
     padding:0;
-	 background: linear-gradient(90deg, aqua, teal);
+	 background: linear-gradient(90deg, #eee, #bbb);
 }
 h1,h2,h3,p{
     margin:0;
@@ -18,13 +21,12 @@ h1,h2,h3,p{
 }
 header{
     height:100px;
-    line-height:100px;
 }
 header h1{
     vertical-align: top;
 }
 
-#login{
+#form{
     margin:auto;
     height:240px;
     width:400px;
@@ -96,4 +98,43 @@ display:block;
 text-align:center;
 text-decoration:none;
 line-height:1.5em;
+}
+
+.article {
+	display:inline-block;
+	width:20%;
+	margin:auto;
+	padding:15px;
+	margin:25px;
+	border:1px solid #000;
+	border-radius:4px;
+	background:#fff;
+	height:500px;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+
+.article  img{
+	max-width:100%;
+}
+
+.article  h3{
+	text-transform:uppercase;
+	color:#123456;
+	font-size:2em;
+	font-family:arial;
+}
+
+.article  h3 em{
+	display:block;
+	text-transform:uppercase;
+	color:#123456;
+	font-size:0.5em;
+	font-family:arial;
+	opacity:0.8;
+}
+
+.article  p{
+	margin-bottom:25px;
+	line-height:1.4em;
 }
